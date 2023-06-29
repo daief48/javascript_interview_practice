@@ -191,7 +191,7 @@
 // console.log(!true);
 
 // 5. String Concatenation (operators)
-console.log("Hello" + " Daief");
+// console.log("Hello" + " Daief");
 
 // 6. Conditional (ternary) operator
 
@@ -232,10 +232,151 @@ console.log("Hello" + " Daief");
 // console.log(a);
 // console.log(b);
 
-// Difference between == vs ===
-console.log(5 == "5"); // Output: true It checks  the values and dont check types of the operands
+// // Difference between == vs ===
+// console.log(5 == "5"); // Output: true It checks  the values and dont check types of the operands
 
-console.log(5 === "5"); // Output: false //It checks both the values and types of the operands.
+// console.log(5 === "5"); // Output: false //It checks both the values and types of the operands.
 
+// Section 4 👉 Control Statement & Loops 
+// If else->
+// var tomr = "sunny";
 
+// if(tomr === "rain"){
+//     console.log("take a raincoat");
+// }else{
+//     console.log("No need to take raincoat");
+// }
+
+// 1: Challenge Time 
+// var year = 2020;
+
+// if(year%4 === 0){
+//     if(year%100 === 0){
+//         if(year%400 === 0){
+//             console.log("leap year.");
+//         }else{
+//             console.log("Not leap year.");
+//         }
+        
+//     }else{
+//         console.log("leap year.");
+//     }
+// }else{
+//     console.log("Not leap year.")
+// }
+
+// What is truthy and falsy values in JavaScript?
+// We have total 5 falsy values in javascript
+// 👉 0, "", undefined, null , NaN and False 
+
+// 0
+// if(score = 0){
+//     console.log("Yay, We won the game 😀");
+// }else{
+//     console.log("OMG, we loss the game 😥");
+// }
+
+// ""
+// if(score = ""){
+//     console.log("Yay, We won the game 😀");
+// }else{
+//     console.log("OMG, we loss the game 😥");
+// }
+
+// undefined
+// if(score = undefined){
+//     console.log("Yay, We won the game 😀");
+// }else{
+//     console.log("OMG, we loss the game 😥");
+// }
+
+// null
+// if(score = null){
+//     console.log("Yay, We won the game 😀");
+// }else{
+//     console.log("OMG, we loss the game 😥");
+// }
+
+// NaN
+// if(score = NaN){
+//     console.log("Yay, We won the game 😀");
+// }else{
+//     console.log("OMG, we loss the game 😥");
+// }
+
+// false
+// if(score = false){
+//     console.log("Yay, We won the game 😀");
+// }else{
+//     console.log("OMG, we loss the game 😥");
+// }
+
+// 2️⃣ Conditional (ternal) operator
+// The conditional (ternary) operator is the only JavaScript operator
+// that takes three operans
+
+// variablename = (condition) ? value1:value2
+// operand variablename,value1,value2
+
+// example :
+// var age = 17;
+// console.log((age >= 18) ? "you can vote." : "you can't vote.");
+
+// 3️⃣ switch Statement 
+// Evaluates an expression, matching the expression's value to a case clause and executes statements associated with that case.
+
+// var x = 0;
+// switch (x) {
+//   case 0:
+//     text = "Off";
+//     break;
+//   case 1:
+//     text = "On";
+//     break;
+//   default:
+//     text = "No value found";
+// }
+// console.log(text);
+
+// Break
+// In JavaScript, the break statement is used to exit or terminate a loop or switch statement. It allows you to prematurely stop the execution of the nearest enclosing loop or switch block and continue with the next statement after the loop or switch.
+
+// var i = 0;
+// while (i < 10) {
+//   if (i === 5) {
+//     break; // terminate the loop if i is equal to 5
+//   }
+//   console.log(i);
+//   i++;
+// }
+// Output: 0 1 2 3 4
+
+// 4️⃣ while loop statement
+// The while statement creates a loop that executes a specified statement
+// as long as the test condition evaluates to true,
+
+// var num = 0;
+// while(num <= 10){
+//     console.log(num);
+//     num++;
+// }
+
+// 5️⃣ Do-While loop
+// var num = 0;
+// do{
+//     console.log(num);
+//     num++;
+// }while(num <=10)
+
+// 6️⃣ For loop
+for(var num = 0; num <= 10; num++){
+    debugger;
+    console.log(num);
+}
+
+// Exercise: 1 multipilication table for 8.
+// for(var num = 1;num<=10; num++){
+//     var ta = 8;
+//     console.log(`${num} x ${ta} = ${num * ta}`);
+// }
 

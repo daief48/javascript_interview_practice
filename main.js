@@ -369,14 +369,99 @@
 // }while(num <=10)
 
 // 6️⃣ For loop
-for(var num = 0; num <= 10; num++){
-    debugger;
-    console.log(num);
-}
+// for(var num = 0; num <= 10; num++){
+//     debugger;
+//     console.log(num);
+// }
 
 // Exercise: 1 multipilication table for 8.
 // for(var num = 1;num<=10; num++){
 //     var ta = 8;
 //     console.log(`${num} x ${ta} = ${num * ta}`);
 // }
+
+// Section 5 👉 Functions in JavaScript
+
+// 1️⃣ Function Definition
+
+// Before we use a function, we need to define it.
+
+// A function defination (also called a function declaration, or function statement)
+// consists of the function keyword, followed by:
+
+//The name of the function.
+// A list of parameters to the funciton, enclosed in parenthese and separated by commas.
+// The JavaScript statements that define the function, enclosed in curly brackets, {...}.
+
+// function sum(){
+//     var a = 10, b = 20;
+//     var total = a + b;
+//     console.log(total);
+// }
+
+// 2️⃣ Calling functions
+// Defining a function does not execute it
+// A JavaScript function is executed when "something" invokes it (calls it)
+
+// sum()
+
+// What is Difference Between Function Parameter Vs Function Arguments
+
+// In JavaScript, the terms "function parameters" and "function arguments" refer to different concepts related to functions.
+
+//1. Function Parameters: Function parameters are the placeholders or variables defined in the function declaration. They represent the values that a function expects to receive when it is called. Parameters are specified within the parentheses following the function name.
+
+
+// function add(a, b) {
+//   return a + b;
+// }
+// In the above example, a and b are function parameters. They act as local variables within the function and can be used to perform computations or operations.
+
+//2. Function Arguments: Function arguments, on the other hand, are the actual values passed to a function when it is called. They correspond to the parameters defined in the function declaration. Arguments are supplied within the parentheses at the time of calling the function.
+
+
+// let result = add(3, 5);
+// In this case, 3 and 5 are function arguments. They are the concrete values that are substituted for the function parameters a and b respectively when the add function is called.
+
+// In summary, function parameters are the variables declared in the function signature, whereas function arguments are the actual values passed to the function when it is invoked. Parameters act as placeholders within the function body, while arguments provide the specific values to be used for the parameters during function execution.
+
+
+// 🙋👨‍🏫 Interview Question 🙋👨‍🏫
+
+// Why Function?
+// Functions in programming provide modularity, reusability, abstraction, organization, and encapsulation, making programs easier to understand, maintain, and reuse.
+
+//4️⃣ Function expression
+//"Function expression simply means create a function and put it into the variable "
+
+// function sum(a,b){
+//     var total = a + b;
+//     console.log(total);
+// }
+
+// var funExp = sum(5,10);
+// funExp;
+
+// 5️⃣ Return keyword
+// In JavaScript, the return keyword is used within a function to specify the value that the function should output or "return" when it is called. It allows a function to compute a result and send it back to the code that invoked the function.
+
+// function add(a, b) {
+//     return a + b; // returns the sum of a and b
+//   }
+  
+//   let result = add(3, 5); // result will be 8
+
+// 6️⃣ Anonymous Function 
+
+// A Function expression is similar to and has the same syntax
+// as a function declaration One can define "named"
+// function expressions (where the name of the expression might be
+// used in the call stack for example) 
+// or "anonymous" function expressions.
+
+// var funExp = function(a,b){
+//     return total = a + b;
+// }
+
+// console.log("The sum of two no is " + funExp(1,5));
 

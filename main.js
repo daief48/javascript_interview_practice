@@ -465,3 +465,113 @@
 
 // console.log("The sum of two no is " + funExp(1,5));
 
+// ***************************************************************
+
+// 👻 Now It's Time for Modern JavaScript 😍😍
+
+// Features of ECMAScript 2015 also know as ES6
+// LET AND CONST, TEMPLATE STRINGS, DEFAULT ARGUMENTS, REST OPERATORS, DESTRUCTURING, OBJECT PROPERTIES, ARROW FUNCTION, SPREAD OPERATORS
+
+// 1️⃣ LET VS CONST
+
+// var 
+// var myName = "Daief Sikder";
+// console.log(myName);
+
+// myName = "Jubair Islam Daief";
+// console.log(myName);
+
+// let
+// let myName = "Daief Sikder";
+// console.log(myName);
+
+// myName = "Jubair Islam Daief";
+// console.log(myName);
+
+// const
+// const myName = "Daief Sikder";
+// console.log(myName);
+
+// myName = "Jubair Islam Daief";
+// console.log(myName);
+
+//1️⃣ var => function scope
+// 1 var: Variables declared with var have function scope or global scope, meaning they are accessible throughout the entire function or, if declared outside any function, globally. Variables declared with var are hoisted to the top of their scope, which means they are moved to the top during the compilation phase.
+
+// function example() {
+//   var x = 5;
+//   if (true) {
+//     var y = 10;
+//     console.log(x); // Accessible
+//   }
+//   console.log(y); // Accessible
+// }
+
+// example();
+// console.log(x); // Not accessible (ReferenceError)
+// console.log(y); // Not accessible (ReferenceError)
+
+
+// In the above example, both x and y are accessible within the function scope due to the var keyword. However, they are not accessible outside the function.
+
+
+//2️⃣ let and const => Block Scope
+// let: Variables declared with let have block scope, which means they are only accessible within the block of code where they are defined (including nested blocks). Unlike var, let variables are not hoisted to the top of their scope.
+
+
+// function example() {
+//   let x = 5;
+//   if (true) {
+//     let y = 10;
+//     console.log(x); // Accessible
+//   }
+//   console.log(y); // Not accessible (ReferenceError)
+// }
+
+// example();
+// console.log(x); // Not accessible (ReferenceError)
+// console.log(y); // Not accessible (ReferenceError)
+// In this example, x is accessible within the function scope and the if block, but not outside of them. The variable y is only accessible within the if block.
+
+// const: Variables declared with const also have block scope like let, but they are also read-only, meaning their values cannot be reassigned once they are assigned. They must be assigned a value at the time of declaration.
+
+
+// function example() {
+//   const x = 5;
+//   if (true) {
+//     const y = 10;
+//     console.log(x); // Accessible
+//   }
+//   console.log(y); // Not accessible (ReferenceError)
+// }
+
+// example();
+// console.log(x); // Not accessible (ReferenceError)
+// console.log(y); // Not accessible (ReferenceError)
+// In this example, both x and y are accessible within their respective scopes, but neither can be accessed outside of their block.
+
+//2️⃣ Template Literals (Template Strings)
+
+// Template literals, also known as template strings, are a feature introduced in ECMAScript 2015 (ES6) that allows for more flexible and readable string formatting in JavaScript. Template literals are enclosed by backticks ( ) instead of single or double quotes.
+
+// Here's an example of a template literal:
+
+// const name = 'Alice';
+// const greeting = `Hello, ${name}!`;
+// console.log(greeting); // Output: Hello, Alice!
+
+//3️⃣ Default Parameters
+// Default function parameters allow named parameters to be
+// initialized with default values if no value or undefined is passed
+
+// function mult(a,b=5){
+//     return a * b;
+// }
+
+// console.log(mult(5));
+
+// 6️⃣ Fat arrow function
+
+// const sum = () => `The sum of the two number is ${(a=5) + (b=6)}`;
+
+// console.log(sum());

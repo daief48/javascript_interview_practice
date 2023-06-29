@@ -206,7 +206,7 @@
 // console.log(message); // Output: "You are an adult"
 
 // 1: Challenge Time: 
-  
+
 // What will be the output of 3**3?
 // console.log(3**3);
 // What will be the output, when we add a number and a string?
@@ -257,7 +257,7 @@
 //         }else{
 //             console.log("Not leap year.");
 //         }
-        
+
 //     }else{
 //         console.log("leap year.");
 //     }
@@ -448,7 +448,7 @@
 // function add(a, b) {
 //     return a + b; // returns the sum of a and b
 //   }
-  
+
 //   let result = add(3, 5); // result will be 8
 
 // 6️⃣ Anonymous Function 
@@ -575,3 +575,318 @@
 // const sum = () => `The sum of the two number is ${(a=5) + (b=6)}`;
 
 // console.log(sum());
+
+// Section 7 👉 Array in JavaScript 
+
+// When we use var, we can stored only one value at a time.
+// When we feel like storing multiple values in one variable then
+// instead of var, we will use an Array.
+// In JavaScript, we have an Array class and
+// arrays are the prototype of this class
+
+// var myFriend = new Array("Daief","Sunny","Akil","Akash","Akik")  
+// console.log(myFriend);
+
+// var myFriend = ["Daief","Sunny","Akil","Akash","Akik"];
+// console.log(myFriend);
+
+// 1️⃣ Array Subsection 1 👉 Traversal in array 👌
+// navigate through an array
+
+// "Traversal in an array" refers to the process of accessing or visiting each element of an array in order to perform a particular operation or gather information. It involves iterating through the array and performing a specific action on each element.
+
+
+// if we want to get the single data at a time and also
+// if we want to change the data
+
+// var myFriend = ["Daief","Sunny","Akil","Akash","Akik"];
+// console.log(myFriend[0]);
+// console.log(myFriend[1]);
+// console.log(myFriend[2]);
+// console.log(myFriend[3]);
+// console.log(myFriend[4]);
+
+// if we want to check the length of elements of an array
+
+// console.log(myFriend.length);
+
+// We use for loop to navigate
+// var myFriend = ["Daief","Sunny","Akil","Akash","Akik"];
+
+// for(var i = 0; i<myFriend.length; i++){
+//     console.log(myFriend[i]);
+// }
+
+
+// After ES6 we have for ..in and for .. of loop too
+// for ..in
+// var myFriend = ["Daief","Sunny","Akil","Akash","Akik"];
+
+// for(let element in myFriend){
+//     console.log(element);
+// }
+// for ..of 
+// var myFriend = ["Daief","Sunny","Akil","Akash","Akik"];
+
+// for(let element of myFriend){
+//     console.log(element);
+// }
+
+// var myFriend = ["Daief","Sunny","Akil","Akash","Akik"];
+
+// myFriend.forEach(function(element, index, array){
+//     console.log(`${element} index: ${index} | ${array}`)
+// })
+
+// IndexOf -> Array 
+// var myFriend = ["Daief","Sunny","Akil","Akash","Akik"];
+// console.log(myFriend.indexOf("Daief"));
+// console.log(myFriend.indexOf("Akash"));
+
+// LastIndexOf
+// const fruits = ['apple', 'banana', 'orange', 'apple', 'mango'];
+
+// const lastIndex = fruits.lastIndexOf('apple');
+// console.log(lastIndex); // Output: 3
+
+// const fruits = ['apple', 'banana', 'orange', 'apple', 'mango'];
+
+// const lastIndex = fruits.lastIndexOf('apple',3); // here 3 means find last index from 0 to 3 
+// console.log(lastIndex); // Output: 3
+
+// const notFoundIndex = fruits.lastIndexOf('grape');
+// console.log(notFoundIndex); // Output: -1
+
+// Filter to search and filter an array in JavaScript, you can user
+// varioust methods and techniques, Here are a few commonly used approaches
+
+// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+// const evenNumbers = numbers.filter((num) => num%2 === 0);
+// console.log(evenNumbers);
+
+// Find Array:
+// The find() method returns the first element in the array that satisfies the provied testing function.
+
+// const fruits = ["apple","banana","orange"];
+// const foundFruit = fruits.find((fruit) => fruit === "orange");
+// console.log(foundFruit);
+
+// FindIndex Array:
+// The findIndex() method returns the first element Index in the array that satisfies the provied testing function.
+
+// const fruits = ["apple","banana","orange"];
+// const foundFruit = fruits.findIndex((fruit) => fruit === "orange");
+// console.log(foundFruit);
+
+// Includes 
+// The includes() method checks if an array includes a certain element, returning true or false as appropiate
+// const number = [1,2,3,4,5];
+// const includeEle = number.includes(3);
+// console.log(includeEle);
+
+// Sort()
+// sort method sorts an array alphabetically
+
+// const fruits = ["Banana","Orange","Apple","Mango","Cherry"];
+// fruits.sort();
+// console.log(fruits);
+
+// -------------
+// Reverse()
+// Reverse a Array
+// const fruits = ["Banana","Orange","Apple","Mango","Cherry"];
+// fruits.sort();
+// fruits.reverse();
+// console.log(fruits);
+
+// -------------------------------
+// To compare arrays in JavaScript, you can use various techniques based on your specific requirements. Here are a few commonly used approaches: 
+// 1. Using JSON.stringify():
+// You can convert the arrays to JSON strings using JSON.stringify() and then compare the strings using the equality operator (===).
+
+// const array1 = [1,2,3];
+// const array2 = [1,2,3];
+
+// const string1 = JSON.stringify(array1);
+// const string2 = JSON.stringify(array2);
+
+// if(string1 === string2){
+//     console.log("Arrays are equal");
+// }else{
+//     console.log("Arrays are not equal");
+// }
+
+// Array Subsection 4 👉 Perform CRUD
+// Push()
+
+// const animals = ["Cow","Goats","Sheep","Pigs"];
+// const count = animals.push("Chicken"); // return new length of the array
+// console.log(count);
+// console.log(animals);
+
+// UnShift()
+
+// const animals = ["Cow","Goats","Sheep","Pigs"];
+// const count = animals.unshift("Chicken"); // return new length of the array
+// console.log(count);
+// console.log(animals);
+
+// // POP()
+
+// const animals = ["Cow","Goats","Sheep","Pigs"];
+// const count = animals.pop(); // return remove element
+// console.log(count);
+// console.log(animals);
+
+// Shift()
+
+// const animals = ["Cow","Goats","Sheep","Pigs"];
+// const count = animals.shift(); // return remove element
+// console.log(count);
+// console.log(animals);
+
+//😃 8: challenge Time 🎌
+
+// Array.prototype.splice() 🙋
+// Adds and/or removes elements from an array
+
+// 1: Add Dec at the end of an array?
+// 2: What is the return value of splice method
+// 3: update march to March (update)?
+// 4: Delete June from an array?
+
+// const months = ['Jan', 'march', 'April', 'June', 'July'];
+
+// // Sol1:
+// const newMonth = months.splice(months.length, 0, "Dec");
+// console.log(months);
+// // Sol2:
+// console.log(newMonth);
+// // Sol3:
+// const indexOfMonth = months.indexOf("march");
+// if (indexOfMonth !== -1) {
+//     const updateMonth = months.splice(1, 1, "March");
+//     console.log(months);
+// }else{
+//     console.log("No Such data found");
+// }
+
+// Sol4:
+// const indexOfMonth = months.indexOf("June");
+// if (indexOfMonth !== -1) {
+//     const updateMonth = months.splice(indexOfMonth,1);
+//     console.log(months);
+// }else{
+//     console.log("No Such data found");
+// }
+
+// Sol5: delete all after march
+// const indexOfMonth = months.indexOf("April");
+// if (indexOfMonth !== -1) {
+//     const updateMonth = months.splice(indexOfMonth,Infinity);
+//     console.log(months);
+// }else{
+//     console.log("No Such data found");
+// }
+
+// 11 Challenge Time 🤯
+// 1: Find the square root of each element in an array?
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let sqrtArr = arr.map(num => Math.sqrt(num));
+
+// console.log(sqrtArr);
+
+// 2: Multiply each element by 2 and return only those elements which are greater than 10?
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let sqrtArr = arr.map(num => num**num);
+
+// console.log(sqrtArr);
+
+// 5️⃣ Array Subsection 4 👉 Map and Reduce Method
+// Reduce()
+// The reduce() method in JavaScript is used to reduce an array to a single value by iterating over its elements and applying a callback function that accumulates a result. It can be used to perform various reduction operations, such as summing the elements, calculating averages, finding maximum or minimum values, concatenating strings, or any other type of reduction operation.
+
+
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+// console.log(sum); // Output: 15
+
+
+// Array.prototype.map()
+const array1 = [11,21,13,14,25];
+// num > 9
+
+// let newArr = array1.map((curElem,index, arr) =>{
+//     return curElem > 17;
+// })
+
+// console.log(array1);
+// console.log(newArr);
+
+// let newArr = array1.map((curElm, index ,arr) =>{
+//     return `Index no = ${index} and the value is ${curElm} belong to ${arr}`
+// })
+
+// console.log(newArr);
+
+// What is difference between map() and forEach() ?
+// => The forEach() return undefined and map() return new array.
+// map() is chainable. This means that you can attach reduce(),sort(),filter() and so on after performing a map() method on an array.
+// You can't do with forEach()
+// Example 1:
+// const numbers = [1, 2, 3, 4, 5];
+
+// const result = numbers
+//   .map(num => num * 2)
+//   .filter(num => num > 5);
+
+// console.log(result);
+
+// Example 2:
+// const numbers = [1, 2, 3, 4, 5];
+
+// const result = numbers
+//   .map(num => num * 2)
+//   .reduce((sum, num) => sum + num, 0);
+
+// console.log(result);
+
+// 👉 Reduce Method
+
+// flatten an array means to convert the 3d or 2d array into a single dimensional array
+
+// The reduce() method executes a reducer function (that you provide) 
+// on each element of the array, resulting in single output value.
+
+// The reducer function takes four arguments
+
+// Accumulator
+// Current Value
+// Current Index
+// Source Array
+// sol: 1 
+// let arr = [2,3,4,6,8];
+// let arr2 = arr.map((curElm) => curElm * 2).filter((curElm) => curElm > 10).reduce((accumulator, curElem, index, arr) =>{
+//     return accumulator += curElem;
+// })
+
+// console.log(arr2);
+
+// sol: 2 
+// let arr = [5,6,2];
+// let sum = arr.reduce((accumulator, curElem) =>{
+//     return accumulator += curElem;
+// },0);
+
+// console.log(sum);
+
+// sol: 3 
+const nestedArray = [[1, 2], [3, 4], [5, 6]];
+
+const flattenedArray = nestedArray.reduce((accumulator, currentArray) => accumulator.concat(currentArray),[]);
+
+console.log(flattenedArray);

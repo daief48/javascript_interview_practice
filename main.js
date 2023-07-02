@@ -1321,3 +1321,27 @@
 // 2: By Calling a function
 // 3: Using Inline events (HTML onclick="")
 // 4: using Event Listeners
+
+// Section 11: Time Events
+//1: setTimeOut
+//2: setInterval
+//3: clearTimeout
+//4: clearInterval
+
+// const myName = () =>{
+//     setTimeout(() => {
+//         console.log("Hi");
+//     }, 2000);
+// }
+// myName();
+
+// clearTimeout(myName); 
+
+// const myName = () =>{
+//     setInterval(() => {
+//         console.log("Hi");
+//     }, 1000);
+// }
+// myName();
+
+// clearInterval(myName);

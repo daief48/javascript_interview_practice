@@ -1224,3 +1224,75 @@
 // console.log(Math.trunc(4.6)); 
 // console.log(Math.trunc(4.5));
 // console.log(Math.trunc(-4.6));  
+
+// Section 10 DOM in JavaScript
+
+// Window-> 
+// 1: Window is the main container or we can say the global Object and any operations related to entire browser can be part of window object
+
+// 2: All the members like objects, methods or properties. If they are the part of window object then we do not refer the window object.
+
+// 3: Window has methods, properties and object. example: setTimeout() or setInterval() are the methods, where as Document is the object of the Window and It also has a screen object with properties describing the physical display.
+
+// Document-> 
+// 1: Wheres the DOM is the child of window object
+// 2: Where in the DOM we need to refer the document, if we want to use the document object, methods or properties.
+// 3: Document is just the object of the global object that is Window, which deals with the document, the HTML elements themselves.
+
+// console.log(window.location);
+// console.log(window.location.href);
+
+// 1.png
+
+// ********************** DOM VS BOM **********************
+
+// 👉 The DOM is the Document Object Model, which deals with the document, the HTML elements themselves, e.g document and all traversal you would do in it, events, etc.
+
+// For Example: 👨‍🏫
+// change the background color to red
+// document.body.style.background = "red";
+
+// 👉 The BOM is the Browser Object Model, which deals with browser components aside from the document, like history, location, navigator and screen (as well as some others that vary by browser). OR In simple meaning all the window operation which comes under BOW are performed using BOM
+
+// Let's see more practical on History object
+
+// Functions alert/confirm/prompt are also a part of BOM:
+// they are directly not related to the document,
+// but represent pure browser methods of communicating with user.
+
+// alert(location.href) // shows current URL 
+// if(confirm("Do want to watch Youtube Video?")){
+//     location.href = "https://www.youtube.com/"
+// }
+
+// window.history.back();
+
+// Section 3️⃣: Navigate through the DOM
+
+// 1: document.documentElement
+    // returns the Element that is the root element of the document.
+// 2: document.head
+// 3: document.body
+// 4: document.body.childNodes (include tab,enter and whiteSpace) list of the direct children only
+// 5: document.children (without text nodes, only regular Elments)
+// 6: document.childNodes.length
+
+// 👉 Practice Time
+// How to check whether an element has child nodes or not?
+// we will use hashChildNodes()
+// -> 2.html 
+// We will use hasChildNodes()
+// 👉 Practice Time
+
+// 6: INTERVIEW QUESTION
+// <!-- Interview Question  -->
+// Difference Between getElementById and querySelector? 
+
+// 👉 What is getElementById()?
+// -> Returns a reference to the element by its ID. If the element with the specified ID is not in document.
+// it will returns null. 
+
+// 👉 What is querySelector()?
+// -> Returns the first element within the document that matches the specified group of selectors, or null if no matches are found.
+
+// 17390.png to 17475.png

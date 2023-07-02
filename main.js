@@ -1119,7 +1119,108 @@
 
 // Converting a String to an Array A string can be converted to an array with the split() method
 
-let txt = "a,b,c,|,d,e";
-console.log(txt.split(","));
-console.log(txt.split(" "))
-console.log(txt.split("|"))
+// let txt = "a,b,c,|,d,e";
+// console.log(txt.split(","));
+// console.log(txt.split(" "))
+// console.log(txt.split("|"))
+
+/* Section 8 👉 DATE & Time IN JavaScript */
+// JavaScript Data objects represent a single moment in time in a platform-independent format. Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.
+
+// 👉 Creating Date Objects
+// There are 4 ways to create a new date object:
+
+// new Date();
+// Date objects are created with the new Date() constructor.
+// new Date(year, month, day, hours, minutes, seconds, milliseconds);
+// // it takes 7 arguments
+// new Date(milliseconds);
+// // we cannot avoid month section
+// new Date(data string);
+
+// let currDate = new Date();
+// console.log(currDate);
+
+// console.log(new Date());
+// console.log(new Date().toLocaleString());
+// console.log(new Date().toString());
+
+// console.log(Date.now());
+
+// new Date(year, month, ...)🙋‍♂️
+// 7 numbers specify year, month, day, hour, minute, second
+// and millisecond (in that order)
+// Note: JavaScript counts month from 0 to 11
+
+// January is 0. December is 11
+
+// let d = new Date(2018, 11, 24, 10, 33, 30, 0);
+// console.log(d.toLocaleString());
+
+// new Date(dataString)
+// new Date(dateString) create new date object from a date String
+
+// let d = new Date("October 13, 2014 11:13:00");
+// console.log(d);
+// console.log(d.toLocaleString());
+
+// new Date(milliseconds) 🙋
+// new Date(milliseconds) creates a new data object as zero time plus milliseconds
+// let now = Date.now();
+// console.log(now);
+// let d = new Date(now);
+// console.log(d.toLocaleString());
+// d = new Date(0);
+// console.log(d.toLocaleString());
+
+// 👉 Dates Method
+
+// const curDate = new Date();
+
+// // // how to get the indivisual date
+// console.log(curDate.toLocaleString());
+// console.log(curDate.getFullYear());
+// console.log(curDate.getMonth());
+// console.log(curDate.getDate());
+// console.log(curDate.getDay());
+
+// // how to set the indivisual date
+
+// console.log(curDate.setFullYear(2022));
+// console.log(curDate.setFullYear(2022,10,5));
+// console.log(curDate.setDate(5));
+// console.log(curDate.toDateString());
+
+// 👉 Time Methods
+// const curTime = new Date();
+
+// console.log(curTime.getTime());
+// console.log(curTime.getHours());
+// console.log(curTime.getMinutes());
+// console.log(curTime.getSeconds());
+// console.log(curTime.getMilliseconds());
+
+// // how to set the indivisual time
+
+// console.log(curTime.setTime());
+// console.log(curTime.setHours(5));
+// console.log(curTime.setSeconds(5));
+// console.log(curTime.setMilliseconds(5));
+
+// Section 9 JavaScript Math Object
+// console.log(Math.PI);
+// let num = 10.256;
+// console.log(Math.round(num));
+// console.log(Math.pow(2,3));
+// console.log(Math.sqrt(25));
+// console.log(Math.abs(-55));
+// console.log(Math.ceil(4.6));
+// console.log(Math.floor(4.6));
+// console.log(Math.max(1,2,33,123,657,89));
+// console.log(Math.min(1,2,33,123,657,89));
+// console.log(Math.random()*10);
+
+// Math.trunc() method returns the integer part of a number
+// console.log(Math.trunc(4.6)); 
+// console.log(Math.trunc(4.5));
+// console.log(Math.trunc(-4.6));  

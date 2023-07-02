@@ -1296,3 +1296,28 @@
 // -> Returns the first element within the document that matches the specified group of selectors, or null if no matches are found.
 
 // 17390.png to 17475.png
+
+// Section 11: EVENTS IN JAVASCRIPT
+
+// HTML events are "things" that happen to HTML elements. When JavaScript is used in HTML pages, JavaScript can "react" on these events.
+
+// 👩‍🏫 HTML Events
+// An HTML event can be something the browser does, or something a user dose.
+
+// Here are some example of HTML events:
+
+// An HTML web page has finished loading
+// An HTML input field was changed
+// An HTML button was clicked
+// Often, when events happen, you may want to do something.
+
+// JavaScript lets you execute code when events are detected.
+
+// HTML allows event handler attributes, with JavaScript cod, to be added to HTML elements.
+
+// section 1️⃣ 4 ways of writting Events in JavaScript
+
+// 1: using alert()
+// 2: By Calling a function
+// 3: Using Inline events (HTML onclick="")
+// 4: using Event Listeners

@@ -817,7 +817,7 @@
 
 
 // Array.prototype.map()
-const array1 = [11,21,13,14,25];
+// const array1 = [11,21,13,14,25];
 // num > 9
 
 // let newArr = array1.map((curElem,index, arr) =>{
@@ -885,8 +885,241 @@ const array1 = [11,21,13,14,25];
 // console.log(sum);
 
 // sol: 3 
-const nestedArray = [[1, 2], [3, 4], [5, 6]];
+// const nestedArray = [[1, 2], [3, 4], [5, 6]];
 
-const flattenedArray = nestedArray.reduce((accumulator, currentArray) => accumulator.concat(currentArray),[]);
+// const flattenedArray = nestedArray.reduce((accumulator, currentArray) => accumulator.concat(currentArray),[]);
 
-console.log(flattenedArray);
+// console.log(flattenedArray);
+
+// ----------------------------------------------
+// Escape Character 
+// Hi Daief Sikder 
+
+/* Section 7 👉 Strings in JavaScript */
+
+// A JavaScript string is zero or more characters written inside quotes.
+
+// JavaScript strings are used for storing and manipulating text.
+// You can use single or double quotes
+
+// Strings can be created as primitives
+// from string literals, or as objects, using the String() constructor
+
+// let myName = "Vinod Thapa";
+// let myChannelName = "Vinod Thapa";
+// let ytName = new String("Daief Sikder");
+
+// console.log(myName);
+// console.log(ytName);
+
+// 👉 Escape Character
+// let anySentence = "We are the so-called \"Vikins\" from the north.";
+// console.log(anySentence);
+// let anySentence1 = 'We are the so-called "Vikins" from the north.';
+// console.log(anySentence1);
+// let anySentence2 = "We are the so-called 'Vikins' from the north.";
+// console.log(anySentence2);
+
+// 👉 Finding a String in a String
+// String.prototype.indexOf(searchValue [, fromIndex])
+// the indexOf() method returns the index of (the position of) the first
+// occurrence of a specified text in a string
+
+// const myBioData = "I am the Thapa Technical";
+
+// console.log(myBioData.indexOf("a"));
+// console.log(myBioData.indexOf("a",5));
+// console.log(myBioData.indexOf("Daaaaaaa"))
+// console.log(myBioData.indexOf("T",10));
+
+// JavaScript counts positions from zero.
+
+// String.prototype.lastIndexOf(searchValue) [, fromIndex] 🖐️
+// Returns the index within tha calling String object of the
+// last occurence of searchValue, or -1 if not found
+
+// const myBioData = "I am the thapa Technical";
+// console.log(myBioData.lastIndexOf("t",6));
+
+// 🫱Searching for a String in a String
+
+// String.prototype.search(regexp)🙋‍♂️
+
+// The sarch() method searches a string for a specified value and returns the position of the match.
+
+// const myBioData = "I am the Thapa Technical";
+// let sData = myBioData.search("Thapa");
+// console.log(myBioData);
+// console.log(sData);
+
+// 👉 Extracting String Parts
+
+// There are 3 methods for extracting a part of String
+
+// slice(start, end)
+// substring(start, end)
+// substr(start, length)
+
+// The slice() Method🙋
+// slice() extracts a part of a string and returns the extracted part
+
+// The method takes 2 parameters: the start position, and the end position (end not include)
+
+// var str = "Apple, Banana, Kiwi";
+// let res = str.slice(0,5)
+// console.log(res);
+
+// res = str.slice(7,-2)
+// console.log(res);
+
+// res = str.slice(0,-6)
+// console.log(res);
+
+// challenge Time: 1
+// ❓Display only 280 character of a string like the one used in Twitter 
+// let myTweets = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quidem suscipit quisquam fugiat quae sunt, accusantium quaerat quibusdam autem, reprehenderit ab, illum molestiae? Dolorem reiciendis consequatur, voluptas unde doloremque vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quidem suscipit quisquam fugiat quae sunt, accusantium quaerat quibusdam autem, reprehenderit ab, illum molestiae? Dolorem reiciendis consequatur, voluptas unde doloremque vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quidem suscipit quisquam fugiat quae sunt, accusantium quaerat quibusdam autem, reprehenderit ab, illum molestiae? Dolorem reiciendis consequatur, voluptas unde doloremque vero.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quidem suscipit quisquam fugiat quae sunt, accusantium quaerat quibusdam autem, reprehenderit ab, illum molestiae? Dolorem reiciendis consequatur, voluptas unde doloremque vero. "   
+
+// let myActualTweet = myTweets.slice(0,180);
+// console.log(myActualTweet);
+// console.log(myActualTweet.length);
+
+//❓Return the Unicode of the last character in a String.
+// const str = "Hello, World!";
+// const lastChar = str.charAt(str.length - 1);
+// const unicodeValue = lastChar.charCodeAt(0);
+// console.log(lastChar);
+// console.log(unicodeValue);
+
+// The substring() Method
+// substring() is similar to slice().
+// The difference is that substring() cannot accept negative indexes.
+
+// let str = "Apple, Banana, Kiwi";
+// let res = str.substring(0,5);
+// console.log(res);
+
+// res = str.substring(8,-2); //cannot accept negative indexes
+// console.log(res);
+
+// The substr() Method 🙋
+// substr() is similar to slice()
+
+// The difference is that the second parameter specifies the length of the extracted part.
+// let text = "Hello world!";
+// let result = text.substr(0, 5);
+// console.log(result);
+
+// result = text.substr(6,6)
+// console.log(result);
+
+// result = text.substr(6,-2)
+// console.log(result); //In JavaScript, if you provide a negative length value to the substr() method, it will be treated as 0. 
+
+
+// result = text.substr(-6)
+// console.log(result);
+
+// 👉 Replacing String Content()
+// String.prototype.replace(searchFor, replaceWith)
+
+// The replace() method replaces a specified value
+// with another value in a string
+
+// let myBioData = "I am vinod bahadur thapa vinod";
+
+// let replaceData = myBioData.replace("vinod","Daief Sikder")
+// console.log(replaceData);
+
+// let p = "The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?";
+
+// let regex = "dog";
+// console.log(p.replaceAll(regex,"ferret"))
+
+// let name = "Vinod is a Good Boy. Vinod is great teacher. Vinod is excellent programmer."
+// console.log(name.replaceAll("Vinod","Daief Sikder"));
+
+// Points to remember
+// 1: The replace() method does not change the string
+// it is called on. It returns a new string.
+// 2: By default, the replace() method replaces only the first match
+// 3: Case sensitive.
+
+// 👉 Extracting String Characters
+
+// There are 3 methods for extracting string characters:
+
+// charAt(position)
+// charCodeAt(position)
+// Property access [ ]
+
+
+// The charAt() Method 🙋‍♂️
+// The charAt() method returns the character at a specified index (position) in a string
+
+// let str = "Hello World";
+// // return character
+// console.log(str.charAt(0));
+// console.log(str.charAt(1));
+// console.log(str.charAt(2));
+// console.log(str.charAt(3));
+// console.log(str.charAt(4));
+// console.log(str.charAt(5));
+// console.log(str.charAt(6));
+// console.log(str.charAt(7));
+// console.log(str.charAt(8));
+// console.log(str.charAt(9));
+// console.log(str.charAt(10));
+
+// console.log("_________")
+// // return UTF-16 code
+// // (an integer between 0 and 65535).
+
+// // The Unicode Standard provides a unique number for every character, no matter the platform, device, application, or language. UTF-8 is a popular Unicode encoding which has 88-bit code units.
+// console.log(str.charCodeAt(0));
+// console.log(str.charCodeAt(1));
+// console.log(str.charCodeAt(2));
+// console.log(str.charCodeAt(3));
+// console.log(str.charCodeAt(4));
+// console.log(str.charCodeAt(5));
+// console.log(str.charCodeAt(6));
+// console.log(str.charCodeAt(7));
+// console.log(str.charCodeAt(8));
+// console.log(str.charCodeAt(9));
+// console.log(str.charCodeAt(10));
+
+// Property Access
+// ECMAScript 5 (2009) allows property access [ ] on strings
+
+// let str = "Hello";
+// console.log(str[0]);
+// console.log(str[1]);
+// console.log(str[2]);
+// console.log(str[3]);
+// console.log(str[4]);
+
+//👉 Other useful methods
+
+// let myName = "Vinod Thapa";
+// console.log(myName.toUpperCase());
+// console.log(myName.toLowerCase());
+
+// The concat() method 🙋
+// let fName = "Daief";
+// let lName = "Sikder";
+// console.log(fName.concat(lName));
+// console.log(fName.concat(" ",lName));
+
+// String.trim() 🙋
+// The trim() method removes whitespace from both sides of a string
+// var str = "                  Hello Word!";
+// console.log(str.length);
+// let rws = str.trim();
+// console.log(rws);
+// console.log(rws.length);
+
+// Converting a String to an Array A string can be converted to an array with the split() method
+
+let txt = "a,b,c,|,d,e";
+console.log(txt.split(","));
+console.log(txt.split(" "))
+console.log(txt.split("|"))

@@ -1345,3 +1345,201 @@
 // myName();
 
 // clearInterval(myName);
+
+// Setion 11: Opps IN JavaScript
+
+// 1️⃣ What is Object Literal? 
+// => Object literal is simply a key:value pair data structure. Storing variable and functions together in one container, we can refer this as an ObJect.
+
+// 1st way
+
+// let bioData = {
+//     myName : "Thapatechnical",
+//     myAge: 26,
+//     getData: function(){
+//         console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+//     }
+// }
+
+// console.log(bioData.myName);
+// console.log(bioData.myAge);
+// bioData.getData();
+
+// let bioData1 = {
+//     myName : "Thapatechnical",
+//     myAge: 26,
+//     getData (){ // another way of defining funcion
+//         console.log(`My name is ${bioData1.myName} and my age is ${bioData1.myAge}`);
+//     }
+// }
+
+// console.log(bioData1.myName);
+// console.log(bioData1.myAge);
+// bioData1.getData();
+
+//2️⃣ What is this Object?
+// => The definition of "this" object is tha it contain the current context.
+// The this object can have different values depending on where it is placed.
+
+// For Example 1
+// console.log(this)
+
+// For Example 2
+// function myName(){
+//     console.log(this);
+// }
+// myName();
+
+// var myNames = "Daief Sikder"
+// function myName1(){
+//     console.log(this.myNames);
+// }
+// myName1();
+
+// For Example 4
+// const obj = {
+//     myAge: 26,
+//     myName() {
+//         console.log(this)
+//     }
+// }
+// obj.myName();
+
+// 4️⃣ Destructuring in ES6
+// The destructuring assignment systax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
+// ➡️ Array Destructing
+
+// const myBioData = ['Vinod','Thapa',26];
+
+// // let myFname = myBioData[0];
+// // let myLname = myBioData[1];
+// // let myAge = myBioData[2];
+
+// // console.log(myFname);
+// // console.log(myLname);
+// // console.log(myAge);
+
+// let [myFname, myLname, myAge] = myBioData;
+
+// console.log(myFname);
+// console.log(myLname);
+// console.log(myAge);
+
+// ➡️ Object Destructing
+
+// const myBioData = {
+//     myFname : "Vinod",
+//     myLname: "thapa",
+//     myAge: 26
+// }
+
+// let {myFname, myLname, myAge, myDegree = "MCS"} = myBioData;
+
+// console.log(myFname);
+// console.log(myLname);
+// console.log(myAge);
+// console.log(myDegree);
+
+// 5️⃣ Object Properties
+
+// ↗️ We can now use Dynamic Properties
+
+// let myName = "Vinod";
+
+// const myBio = {
+//     [myName] : "Hello how are you?",
+//     [20 + 6]: "is my age"
+// }
+
+// console.log(myBio);
+
+// 👉 no need to write key:value if all are same. Write it once
+
+// let myName = "Daief Sikder";
+// let myAge = 26;
+// const myBio = {myName, myAge};
+// console.log(myBio);
+
+// 6️⃣ Fat Arrow Function
+
+// 👻 Normal Way of writting Function
+
+// console.log(sum());
+// function sum(){
+//     let a = 5; b = 6;
+//     let sum = a + b;
+//     return `The sum of the two number is ${sum}`;
+// }
+
+// 👻 How to convert in into Fat Arrow Function
+
+// const sum = () => `The sum of the two number is ${(a=5)+(b=6)}`;
+// console.log(sum())
+
+// 7️⃣ Spread Operator
+
+// const colors = ['red','green','blue','white'];
+// const myColors = ['red','green','blue','white','yellow','black'];
+
+// // 2nd time add one more color on top and tell we need to write it again on myColor array too
+
+// const MyFavColors = [...colors, "yellow","black"];
+// console.log(MyFavColors);
+
+// 8️⃣ String.pad()
+// const message = "My name is Daief";
+// console.log(message);
+// console.log(message.padStart(5));
+// console.log(message.padEnd(10));
+
+// let myName = "Daief".padStart(7);
+// console.log(myName);
+
+// let myName = "Daief".padEnd(7);
+// console.log(myName);
+
+
+// const person = {name: 'Daief', age: 87};
+// console.log(Object.values(person));
+// console.log(Object.entries(person));
+// const arrObj = Object.entries(person);
+// console.log(Object.fromEntries(arrObj));
+// const numbers = [1,2,3,4,5,6];
+// [first, second, ...others] = numbers;
+// console.log(first);
+// console.log(second);
+// console.log(others);
+
+// const arr = [
+//     ['zone_1','zone_2'],
+//     ['zone_3','zone_4'],
+//     ['zone_5','zone_6'],
+//     ['zone_1','zone_2',['zone_1','zone_2']],
+// ]
+
+// // let flatArr = arr.reduce((accum, currVal) =>{
+// //     return accum.concat(currVal);
+// // })
+// // console.log(flatArr);
+
+// console.log(arr.flat(2)); // flat(2) - level of array is 2
+
+// const arr1 = [
+//     ['zone_1','zone_2'],
+//     ['zone_3','zone_4'],
+//     ['zone_5','zone_6'],
+//     ['zone_1','zone_2',['zone_1','zone_2',['zone_1','zone_2']]],
+// ]
+
+// console.log(arr.flat(3))// flat(3) - level of array is 3
+// console.log(arr.flat(Infinity));
+
+// let oldNum = Number.MAX_SAFE_INTEGER;
+// console.log(oldNum);
+// console.log(oldNum + 1)
+// console.log(oldNum + 4)
+// console.log(oldNum + 6)
+// console.log(oldNum + 8)
+
+// console.log(900719925470991n +12n);

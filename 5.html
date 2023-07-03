@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="parentDiv"
+      id="parentDiv"
+      style="height: 171px; background: red; width: 228px; margin: auto"
+    >
+      <div
+        class="chlidDiv"
+        id="childDiv"
+        style="background: blue; height: 112px; margin: 25px"
+      ></div>
+    </div>
+
+    <script>
+      const parentId = document.getElementById("parentDiv");
+      const childId = document.getElementById("childDiv");
+
+      const parentCall = () => {
+        alert("Parent Div Call");
+        console.log("Parent Div Call");
+      };
+
+      const childCall = () => {
+        alert("Child Div Call");
+        console.log("Child Div Call");
+      };
+
+      parentId.addEventListener("click", parentCall, true); // true for capturing
+      childId.addEventListener("click", childCall, true); // true for capturing
+    </script>
+  </body>
+</html>

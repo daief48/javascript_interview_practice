@@ -1543,3 +1543,54 @@
 // console.log(oldNum + 8)
 
 // console.log(900719925470991n +12n);
+
+// Section 13: Advanced JavaScript
+
+// What is event propagation??
+// => The event propagation mode determines in which order the elements receive the event.
+
+// ** Event bubbling and capturing are two ways of event propagation in the HTML DOM API, when an event occurs in an element inside another element, and both elements have registered a handle for that event.
+
+// ** Propagation is Broadly categorized into 3 main types
+// 1: The Capture Phase
+// => Going from the window to the event target phase
+// 2: The Target Phase
+// => It is the target phase.
+// 3: The Bubble Phase
+// => From the event target parent back to the window
+
+// What is event Capturing??
+// => With event capturing, the event is first captured by the outermost element and propagated to the inner elements.
+// Capturing is also called "tricking", which helps remember the propagation order 
+// -> 4.html // Event bubbling by default
+// 5.html // Event Capturing
+
+// // Check Html file
+
+// // 2️⃣: Higher Order Function?
+// => Function which takes another function as an arguments is called HOF wo function jo dusre function ko as an argument accept krta hai use HOF.
+
+// // 3️⃣: Callback Function
+// => Function which get passed as an argument to another function is called CBF. A Callback function is passed as an argument to another function, to be "called back" at a later time.
+
+// const add = (a,b) => {
+//     return a + b;
+// }
+
+// const subs = (a,b) => {
+//     return a - b;
+// }
+
+// const mult = (a,b) => {
+//     return a * b;
+// }
+
+// const Div = (a,b) => {
+//     return a / b;
+// }
+
+// const calculator = (num1, num2, operator) =>{
+//     return operator(num1,num2);
+// }
+
+// console.log(calculator(5,2,add));
